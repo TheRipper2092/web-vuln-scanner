@@ -1,0 +1,16 @@
+2025-06-23 05:57:23,448 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2025-06-23 05:57:23,448 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 05:57:23,449 - INFO -  * Restarting with stat
+2025-06-23 05:57:23,883 - WARNING -  * Debugger is active!
+2025-06-23 05:57:23,883 - INFO -  * Debugger PIN: 136-126-421
+2025-06-23 05:57:34,907 - INFO - 127.0.0.1 - - [23/Jun/2025 05:57:34] "GET / HTTP/1.1" 200 -
+2025-06-23 05:57:35,564 - INFO - 127.0.0.1 - - [23/Jun/2025 05:57:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-23 05:57:52,683 - INFO - XSS detected at http://testphp.vulnweb.com/search.php?test=query with payload: <script>alert('XSS')</script>
+2025-06-23 05:57:53,258 - INFO - XSS detected at http://testphp.vulnweb.com/search.php?test=query with payload: <img src=x onerror=alert('XSS')>
+2025-06-23 05:57:53,846 - INFO - XSS detected at http://testphp.vulnweb.com/search.php?test=query with payload: "'><script>alert('XSS')</script>
+2025-06-23 05:57:55,710 - INFO - SQLi detected at http://testphp.vulnweb.com/search.php?test=query with payload: ' UNION SELECT NULL, username, password FROM users --
+2025-06-23 05:57:55,717 - INFO - 127.0.0.1 - - [23/Jun/2025 05:57:55] "POST /scan HTTP/1.1" 200 -
+2025-06-23 06:00:04,167 - INFO - 127.0.0.1 - - [23/Jun/2025 06:00:04] "GET / HTTP/1.1" 200 -

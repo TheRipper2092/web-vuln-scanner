@@ -1,0 +1,37 @@
+[
+    {
+        "type": "XSS",
+        "payload": "<script>alert('XSS')</script>",
+        "evidence": "Reflected payload: <script>alert('XSS')</script>",
+        "severity": "High",
+        "timestamp": "2025-06-23 05:57:52"
+    },
+    {
+        "type": "XSS",
+        "payload": "<img src=x onerror=alert('XSS')>",
+        "evidence": "Reflected payload: <img src=x onerror=alert('XSS')>",
+        "severity": "High",
+        "timestamp": "2025-06-23 05:57:53"
+    },
+    {
+        "type": "XSS",
+        "payload": "\"'><script>alert('XSS')</script>",
+        "evidence": "Reflected payload: \"'><script>alert('XSS')</script>",
+        "severity": "High",
+        "timestamp": "2025-06-23 05:57:53"
+    },
+    {
+        "type": "SQLi",
+        "payload": "' UNION SELECT NULL, username, password FROM users --",
+        "evidence": "SQL error pattern matched: sql syntax.*mysql",
+        "severity": "Critical",
+        "timestamp": "2025-06-23 05:57:55"
+    },
+    {
+        "type": "CSRF",
+        "payload": null,
+        "evidence": "Missing CSRF token in POST form",
+        "severity": "Medium",
+        "timestamp": "2025-06-23 05:57:55"
+    }
+]
