@@ -8,9 +8,10 @@ A Python-based tool to detect common web vulnerabilities like XSS, SQL Injection
 
 ## Installation
 ```bash
-pip3 install requests beautifulsoup4 flask
+pip3 install requests beautifulsoup4 flask.
 
-Usage
+
+## Usage
 
     Run the scanner:
     bash
